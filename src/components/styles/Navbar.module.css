@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Roboto Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Regular'), url('/Roboto-Regular.woff') format('woff');
+  }
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto Regular';
+
+}
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-family: 'Roboto Regular';
+
+}
+
+.navLinks li {
+  display: inline;
+  font-family: 'Roboto Regular';
+
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  font-family: 'Roboto Regular';
+
+}
+
+.navLinks a:hover {
+  color: #007bff;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bellButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bellIcon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bellIcon:hover {
+  transform: scale(1.1);
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.avatar:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    
+  }
+
+  .navLinks a {
+    font-size: 14px;
+  }
+}
