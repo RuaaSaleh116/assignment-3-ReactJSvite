@@ -11,10 +11,10 @@ const Header = ({ backgroundImage }) => {
         <p className={styles.subtitle}>
           Find the best destinations and the most popular stays!
         </p>
-        
+
         <div className={styles.searchBox}>
-          <div className={styles.radioGroup}>
-            <label>
+          <div className={styles.radioContainer}>
+            <label className={styles.radioLabel}>
               <input 
                 type="radio" 
                 name="tripType" 
@@ -23,7 +23,7 @@ const Header = ({ backgroundImage }) => {
                 onChange={() => setTripType("return")}
               /> Return
             </label>
-            <label>
+            <label className={styles.radioLabel}>
               <input 
                 type="radio" 
                 name="tripType" 
@@ -34,7 +34,9 @@ const Header = ({ backgroundImage }) => {
             </label>
           </div>
 
-          <div className={styles.inputGroup}>
+          <h3 className={styles.searchTitle}>SEARCH FLIGHTS</h3>
+
+          <div className={styles.inputContainer}>
             <div className={styles.inputField}>
               <label>Departure</label>
               <input type="text" placeholder="Singapore (SIN)" />
@@ -47,13 +49,11 @@ const Header = ({ backgroundImage }) => {
 
             <div className={styles.inputField}>
               <label>Date</label>
-              <div className={styles.dateInput}>
-                <input type="date" />
-              </div>
+              <input type="date" />
             </div>
-          </div>
 
-          <button className={styles.searchButton}>SEARCH FLIGHTS</button>
+            <button className={styles.searchButton}>SEARCH FLIGHTS</button>
+          </div>
         </div>
       </div>
     </header>

@@ -1,5 +1,5 @@
 import styles from "./styles/Footer.module.css";
-import logo from "/FickleFlightWhite.png"
+import logo from "/FickleFlightWhite.png";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
@@ -7,8 +7,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.about}>
-          <img src={logo} alt="logo" width="180" className={styles.logo} />   
-          
+          <img src={logo} alt="logo" width="180" className={styles.logo} />
           <p>
             Fickle Flight is your one-stop travel portal. We offer hassle-free flight and hotel bookings. 
             We also have all your flight needs in our online shop.
